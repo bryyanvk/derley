@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diagnóstico — Hardware</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-detail">
+  <header class="topbar">
+    <div class="topbar-left">
+      <button id="menuBtn2" class="hamburger" aria-label="Abrir menu">☰</button>
+      <a class="brand" href="index.html">Diagnóstico</a>
+    </div>
+    <div class="topbar-right">
+      <button id="themeBtn2" class="theme-btn">🌙</button>
+    </div>
+  </header>
+
+  <nav id="sideNav2" class="sidenav">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li class="active"><a href="hardware.html">Hardware</a></li>
+      <li><a href="software.html">Software</a></li>
+      <li><a href="conexao.html">Conexão</a></li>
+      <li><a href="externos.html">Externos</a></li>
+      <li><a href="referencias.html">Referências</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <article class="detail">
+      <h1>Problemas de Hardware</h1>
+      <p class="lead">Descrição detalhada, como identificar e passos de diagnóstico recomendados.</p>
+
+      <section class="detail-section">
+        <h2>Falha no HD/SSD</h2>
+        <p>Sintomas: lentidão extrema, arquivos corrompidos, clique/ruído no HD. Testes: executar SMART (CrystalDiskInfo), verificar S.M.A.R.T., usar <code>chkdsk</code> no Windows ou <code>smartctl</code> no Linux. Solução: backup imediato; se SMART apontar erro, substituição recomendada.</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Memória RAM com defeito</h2>
+        <p>Sintomas: telas azuis (BSOD), reinicializações aleatórias, travamentos em aplicações. Testes: MemTest86 (rodar por várias passes). Solução: identificar módulo com problema trocando posições, substituir o módulo defeituoso.</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Superaquecimento</h2>
+        <p>Sintomas: throttling (redução de performance), desligamentos, ventoinhas altas. Testes: monitorar temperaturas com HWMonitor ou <code>sensors</code> (Linux). Solução: limpar dissipadores/ventoinhas, trocar pasta térmica, melhorar fluxo de ar.</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Fonte de alimentação</h2>
+        <p>Sintomas: não liga, reinicia aleatoriamente, ruídos. Testes: testar com outra fonte conhecida boa ou usar multímetro. Solução: substituir por fonte de qualidade com potência adequada.</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Placa-mãe e placa de vídeo</h2>
+        <p>Checar capacitores estufados, testar com componentes mínimos (POST mínimo), trocar cabos e testar vídeo integrado se disponível.</p>
+      </section>
+    </article>
+  </main>
+
+  <div id="cookieBanner2" class="cookie-banner hidden">
+    <p>🍪 Este site usa cookies locais. <button id="acceptCookies2" class="accept">Aceitar</button></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

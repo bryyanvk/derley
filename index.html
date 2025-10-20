@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diagnóstico de Problemas — Índice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <button id="menuBtn" class="hamburger" aria-label="Abrir menu">☰</button>
+      <a class="brand" href="index.html">Diagnóstico</a>
+    </div>
+    <div class="topbar-right">
+      <input id="searchInput" class="search" type="search" placeholder="Pesquisar problema (ex: disco, vírus, wifi)..." />
+      <button id="themeBtn" class="theme-btn" aria-label="Trocar tema">🌙</button>
+    </div>
+  </header>
+
+  <nav id="sideNav" class="sidenav">
+    <ul>
+      <li class="nav-header">Menu</li>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="hardware.html">Hardware</a></li>
+      <li><a href="software.html">Software</a></li>
+      <li><a href="conexao.html">Conexão</a></li>
+      <li><a href="externos.html">Externos</a></li>
+      <li><a href="referencias.html">Referências</a></li>
+      <li class="nav-header">Equipe</li>
+      <li><span>Bryan Leandro Rosa</span></li>
+      <li><span>Marcos Junior</span></li>
+      <li><span>Kauan Rodrigues</span></li>
+      <li><span>João Gabriel</span></li>
+      <li><small>Turma: 2º Técnico</small></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Diagnóstico de Problemas no Computador</h1>
+      <p>Ferramenta rápida para identificar sintomas, causas e soluções — escolha uma categoria ou pesquise diretamente.</p>
+    </section>
+
+    <section class="cards" id="cardsList">
+      <article class="card" data-tags="hd ssd disco lentidao backup">
+        <img src="img/hardware.svg" alt="Hardware">
+        <h3>Hardware</h3>
+        <p>Identificação de falhas físicas: HD/SSD, memória, fonte, placa-mãe e vídeo. Passos de diagnóstico e testes sugeridos.</p>
+        <a class="btn" href="hardware.html">Abrir</a>
+      </article>
+
+      <article class="card" data-tags="sistema virus malware driver programa bug">
+        <img src="img/software.svg" alt="Software">
+        <h3>Software</h3>
+        <p>Soluções para sistema operacional corrompido, malwares, drivers e aplicativos com problemas. Como reparar e recuperar dados.</p>
+        <a class="btn" href="software.html">Abrir</a>
+      </article>
+
+      <article class="card" data-tags="wifi cabo rede internet portas usb conexao">
+        <img src="img/rede.svg" alt="Conexão">
+        <h3>Conexão</h3>
+        <p>Diagnóstico de conectividade: Wi‑Fi, cabo, IP/DNS e portas USB defeituosas.</p>
+        <a class="btn" href="conexao.html">Abrir</a>
+      </article>
+
+      <article class="card" data-tags="teclado mouse monitor tela periferico display">
+        <img src="img/externos.svg" alt="Externos">
+        <h3>Externos / Periféricos</h3>
+        <p>Problemas com teclado, mouse, monitores e outros periféricos: testes rápidos e recomendações.</p>
+        <a class="btn" href="externos.html">Abrir</a>
+      </article>
+
+      <article class="card" data-tags="referencias fontes leitura artigos guias">
+        <img src="img/referencias.svg" alt="Referências">
+        <h3>Referências</h3>
+        <p>Artigos, guias e páginas técnicas externas (não Wikipedia) para aprofundar o diagnóstico.</p>
+        <a class="btn" href="referencias.html">Abrir</a>
+      </article>
+    </section>
+  </main>
+
+  <div id="cookieBanner" class="cookie-banner hidden">
+    <p>🍪 Este site usa cookies locais para lembrar suas preferências. <button id="acceptCookies" class="accept">Aceitar</button></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diagnóstico — Software</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-detail">
+  <header class="topbar">
+    <div class="topbar-left">
+      <button id="menuBtn3" class="hamburger" aria-label="Abrir menu">☰</button>
+      <a class="brand" href="index.html">Diagnóstico</a>
+    </div>
+    <div class="topbar-right">
+      <button id="themeBtn3" class="theme-btn">🌙</button>
+    </div>
+  </header>
+
+  <nav id="sideNav3" class="sidenav">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="hardware.html">Hardware</a></li>
+      <li class="active"><a href="software.html">Software</a></li>
+      <li><a href="conexao.html">Conexão</a></li>
+      <li><a href="externos.html">Externos</a></li>
+      <li><a href="referencias.html">Referências</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <article class="detail">
+      <h1>Problemas de Software</h1>
+      <p class="lead">Soluções e procedimentos para diagnóstico de softwares e sistema operacional.</p>
+
+      <section class="detail-section">
+        <h2>Sistema operacional corrompido</h2>
+        <p>Sintomas: não inicializa, erros no boot, tela preta. Ações: tentar reparar com mídia de recuperação, usar pontos de restauração (Windows) ou <code>fsck</code> e <code>grub</code> recovery no Linux. Backup antes de tudo.</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Vírus e malwares</h2>
+        <p>Sintomas: lentidão, janelas desconhecidas, popups, processos estranhos. Ações: escanear com antivírus confiável (Windows Defender, Malwarebytes), usar ferramentas de remoção offline e restaurar arquivos a partir de backups.</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Drivers desatualizados</h2>
+        <p>Sintomas: dispositivos com mau funcionamento. Ações: baixar drivers do site do fabricante, usar gerenciador de dispositivos ou pacotes oficiais do sistema.</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Programas com bugs</h2>
+        <p>Verificar logs, atualizar para versão mais recente, reinstalar e testar em modo seguro quando aplicável.</p>
+      </section>
+    </article>
+  </main>
+
+  <div id="cookieBanner3" class="cookie-banner hidden">
+    <p>🍪 Este site usa cookies locais. <button id="acceptCookies3" class="accept">Aceitar</button></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
